@@ -12,23 +12,26 @@
           margin: 10px;
         }
     </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Artist Search</h1>
+        <h1>Artsy!</h1>
 
         <!-- buttons will go here-->
-        <div id="artist-view"></div>
+        <div class="artistButtons" id="artist-view"></div>
         
         
-        <form id="aritist-form">
-            <label for="artist-input">Add an Artist, Yo!</label>
+        <form id="artist-form">
+            <label for="artist-input">Type in the name of your favorite artist!</label>
             <input type="text" id="artist-input"><br>
       
            <!-- Button triggers new movie to be added -->
-            <input id="add-artist" type="submit" value="Add a Artist, Yo!">
+            <button class="btn btn-danger" id="add-artist" type="submit">Add a Artist, Yo!</button>
         </form>
 
         <!-- gifs will go here-->
@@ -48,7 +51,7 @@
             $("#artist-view").empty();
             for(var i = 0; i < artists.length; i++){
                 var a = $("<button>");
-                a.addClass("artist");
+                a.addClass("artist btn btn-danger");
                 a.attr("data-name", artists[i]);
                 a.attr("id", artists[i]);
                 a.text(artists[i]);
