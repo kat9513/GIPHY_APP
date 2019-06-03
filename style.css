@@ -1,26 +1,33 @@
+
 html{
-    background-color: #fcdb6f;
     text-align:center;
-    margin:auto;
-    padding:0;
     font-family: 'Ubuntu', sans-serif;
+
 }
+
 body{
-    background: none;
+    background-image: linear-gradient(to bottom right, #74ebd5, #ACB6E5);
+    background-repeat: no-repeat; 
+    height: 500rem;
 }
 h1{
     margin: 50px;
     text-align: center;
     font-family: 'Fascinate Inline', cursive;
+    color: #DC143C;
 }
 .artist{
     text-align: center; 
     margin: auto;
+    background: none;
+    border: 2px solid #DC143C;
+    color: #DC143C;
 }
 .artistButtons{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 #artist-form{
     text-align: center; 
